@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --body-font: "Red Hat Display";
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern-background-mobile.svg), var(--Very-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.container{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+    overflow: hidden;
+    max-width: 27.5rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin: auto;
+    margin-top: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 1.75rem;
+    padding-top: 2.5rem;
+}
+
+.description{
+    color: var(--Desaturated-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+}
+
+a{
+    color: var(--Bright-blue);
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+a.active{
+    color: var(--Dark-blue);
+}
+
+a.active:hover{
+    color: var(--Bright-blue);
+}
+
+a.active:active{
+    color: var(--Desaturated-blue);
+}
+
+a.active:focus{
+    color: var(--Desaturated-blue);
+}
+
+a.active:focus:not(:focus-visible){
+    color: var(--Desaturated-blue);
+}
+
+a:hover{
+    color: var(--Desaturated-blue);
+}
+
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em 1.5em 2em;
+}
+
+
+.plan-payment-wrapper {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.plan-payment {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.1rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.plan-payment h2{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.plan-payment p{
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 2rem;
+    margin-top: 0.4em;
+}
+
+.plan-payment-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 1.5em;
+}
+
+
+.plan-payment-detail {
+    color: var(--Bright-blue);
+    font-weight: 900;
+    margin-right: 2rem;
+    margin-left: auto;
+    align-self: center;
+}
+
+.payment-button{
+    background-color: var(--Bright-blue);
+    box-shadow: 0 20px 12px 0 hsla(245, 75%, 52%, .10);
+    max-width: 27.5rem;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+}
+
+.payment-button button{
+    background-color: var(--Bright-blue);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.payment-button button:hover{
+    opacity: 0.8;
+}
+
+.payment-button button:active{
+    opacity: 0.6;
+}
+
+.payment-button button:focus{
+    outline: none;
+}
+
+.payment-button button:focus:not(:focus-visible){
+    outline: none;
+}
+
+.payment-button button:focus-visible{
+    outline: 2px solid var(--Desaturated-blue);
+}
+
+.cancel-button button{
+    color: var(--Desaturated-blue);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 900;
+    padding-top: 1.75em;
+    padding-bottom: 2.5em;
+}
+
+.cancel-button button:hover{
+    color: var(--Dark-blue)
+}
+
+.cancel-button button:active{
+    color: var(--Desaturated-blue)
+}
+
+.cancel-button button:focus{
+    outline: none;
+}
+
+.cancel-button button:focus:not(:focus-visible){
+    outline: none;
+}
+
+.cancel-button button:focus-visible{
+    outline: 2px solid var(--Desaturated-blue);
+}
